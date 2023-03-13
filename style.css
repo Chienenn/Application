@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans+TC&display=swap");
 
-* {
-  /*border: solid 1px black;*/
-}
-/* 整張頁面巷內縮而非div */
 body {
   display: flex;
   justify-content: center;
@@ -82,11 +78,6 @@ img {
   padding: 5px;
   margin: 0;
 }
-/*.contact {
-  font-size: 20px;
-  list-style: none;
-  line-height: 20px;
-}*/
 a {
   color: rosybrown;
   text-decoration: none;
@@ -98,18 +89,6 @@ a:hover {
   color: #f5a09a;
 }
 
-/*.contact {
-  border-bottom: solid 1px gray;
-  padding: 5px;
-  font-size: 15px;
-}*/
-/*.email {
-  list-style: none;
-  color: gray;
-  padding-top: 12px;
-  font-size: 15px;
-  border-bottom: solid 1px gray;
-}*/
 h1 {
   margin: 0px;
   padding-top: 10px;
@@ -166,14 +145,7 @@ li {
   padding: 0px;
   margin: 0;
 }
-/*.worklist > li {
-  padding: 6px;
-}*/
 
-/*ul {
-  margin: 0;
-  padding-left: 0px;
-}*/
 .right ul {
   padding: 0;
   list-style: none;
@@ -218,14 +190,14 @@ li {
 
 @keyframes moveIn {
   0% {
-    opacity: 0; /*一開始文字是隱形的,不透明度設為:0*/
-    transform: translateX(-10rem); /*負的往左移*/
+    opacity: 0;
+    transform: translateX(-10rem); 
   }
   80% {
     transform: translateX(1rem);
   }
   100% {
     opacity: 1;
-    transform: translate(0); /*設為0為原本樣子*/
+    transform: translate(0); 
   }
 }
