@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans+TC&display=swap");
+
+* {
+  /*border: solid 1px black;*/
+}
+/* 整張頁面巷內縮而非div */
+body {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  margin: 0;
+  background-image: linear-gradient(
+      to bottom,
+      #ffeadb,
+      #efa8b0,
+      #c3b9de,
+      #9ecdea
+    ),
+    url(bg.jpg);
+  font-family: "Gloock", "Noto Sans TC", sans-serif;
+}
+.name {
+  color: #f7f7f7;
+  animation-name: moveIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+
+.name2 {
+  color: #f7f7f7;
+  font-family: inherit;
+  letter-spacing: 2px;
+  animation-name: moveIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+/*.logo {
+  clip-path: circle(50% at 50% 50%);
+  overflow: clip;
+}*/
+
+.wrapper {
+  width: 64rem;
+  max-width: calc(80%-4em);
+  margin: 0 auto;
+}
+
+.alt {
+  padding: 7em 5em 4em 5em;
+}
+
+#header {
+  text-align: center;
+  display: block;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+.mainpage {
+  font-family: "Gloock", "Noto Sans TC", sans-serif;
+  padding: 40px;
+  display: flex;
+  max-width: 900px;
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.9px;
+  border-radius: 3%;
+  background: #ffffff;
+}
+.left {
+  flex: 7;
+}
+.right {
+  flex: 3;
+  padding-left: 1rem;
+}
+img {
+  clip-path: circle(50% at 50% 50%);
+  margin-left: 2rem;
+}
+.block {
+  padding: 5px;
+  margin: 0;
+}
+/*.contact {
+  font-size: 20px;
+  list-style: none;
+  line-height: 20px;
+}*/
+a {
+  color: rosybrown;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+  transition: all 0.2s;
+  color: #f5a09a;
+}
+
+/*.contact {
+  border-bottom: solid 1px gray;
+  padding: 5px;
+  font-size: 15px;
+}*/
+/*.email {
+  list-style: none;
+  color: gray;
+  padding-top: 12px;
+  font-size: 15px;
+  border-bottom: solid 1px gray;
+}*/
+h1 {
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #8c8f8c;
+}
+h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #565b56;
+}
+h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #565b56;
+  border-bottom: 1px solid #908282;
+}
+h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 10;
+  color: #5d7ea6;
+  opacity: 0.2;
+}
+h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #5c81af;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #5c81af;
+  padding-bottom: 8px;
+  padding-right: 55px;
+}
+
+li {
+  font-size: 14px;
+  color: #565b56;
+  line-height: 25px;
+  list-style: none;
+}
+.content {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+/*.worklist > li {
+  padding: 6px;
+}*/
+
+/*ul {
+  margin: 0;
+  padding-left: 0px;
+}*/
+.right ul {
+  padding: 0;
+  list-style: none;
+}
+
+.skill .barChart {
+  border: solid 2px #f5a09a;
+  border-radius: 5px;
+  width: 150px;
+  height: 10px;
+}
+.skill li {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  display: flex;
+}
+.value {
+  height: 100%;
+  width: 70%;
+  background-color: #f5a09a;
+}
+
+.v40 {
+  width: 40%;
+}
+.v50 {
+  width: 50%;
+}
+.v55 {
+  width: 55%;
+}
+.v80 {
+  width: 80%;
+}
+
+.icons {
+  margin: 0 0 0rem -2rem;
+  padding-left: 50px;
+  display: flex;
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0; /*一開始文字是隱形的,不透明度設為:0*/
+    transform: translateX(-10rem); /*負的往左移*/
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0); /*設為0為原本樣子*/
+  }
+}
